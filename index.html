@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Tienda Liz store </title>
+    <link rel="stylesheet" href="grid.css">
+    
+    <link rel="shortcut icon" href="./photos/klipartz.com (5).png" type="image/x-icon">
+    <script>
+        function ventana() {
+            alert("Formulario enviado correctamente.");
+        }
+        
+        function enviarFormulario() {
+            ventana();
+            return true;
+        }
+        </script>
+</head>
+<body class="grid-container">
+    <header class="header">
+        <nav>
+            <ul class="main-nav">
+                <div class="logo">
+                    <img src="./Photos/klipartz.com (5).png" alt="logo de la compañia"> 
+                </div>
+                <h1> Supermarket Liz store  </h1>
+                <li class="main-nav__item"><a href="">Home</a></li>
+                <li class="main-nav__item"><a href="">About us</a></li>
+                <li class="main-nav__item"><a href="">Realiza un pedido </a></li>
+            </ul>
+    </nav>
+</header>
+    <main>
+        <section class="section">
+            <div class="box" id="one">
+                <h2> Aqui encuentra variedad de frutas y verduras 100% organicos </h2>
+                <a class="Boton" href="Productos store Liz.html"> Ver productos </a>
+            </div>
+                <div class="box" id="two">
+                    <video src="./video/5865397-uhd_3840_2160_25fps.mp4" controls preload="auto"></video>
+                </div>
+        </section>
+        <aside class="aside">
+            <div class="nosotros">
+                <img src="./Photos/pexels-daniel-delgado-574115773-16957834.jpg" alt="">
+                <div class="textbox">
+                    <h3> Nuestra Mision</h3>
+                    <p> En Supermarket Liz store deseamos ser un puente que conecta a las personas que a diario trabajan en el campo para llevar a la mesa de los colombianos frutas y verduras libres de químicos , conservantes para proporcionar una alimentacion saludable y pura </p>
+                    <p> <em>Liz Ortiz -CEO </em></p>
+                </div>
+             </div>        
+        </aside>
+<main>
+    <h2> 👇 Aqui confirma tu pedido</h2>
+    <p> Necesitaremos tus datos personales para hacer que nuestros servicios supermarket lleguen a la puerta de tu casa 😊💕 </p>
+    <form onsubmit="return enviarFormulario()">
+    <label for="nombre ">
+        <span>Ingresa tu nombre completo</span>
+        <input type="text" name="nombre " id="nombre" autocomplete="name" required="">
+    </label>
+    <label for="Dia-Domicilio ">
+        <span>Programa el dia que podemos enviarte tu pedido , escribe el dia</span>
+        <input type="date" name="Dia-Domicilio" id="Dia-Domicilio" required="">
+    </label>
+    <label for="horario ">
+        <span>¿En que horario?</span>
+        <input type="time" name="horario" id="horario" required="">
+    </label>
+    <label for="correo ">
+        <span>Ingresa tu correo electronico </span>
+        <input type="email" nombre="correo" id="correo" autocomplete="email" required="">
+    </label>
+    <label for="phone ">
+        <span>Ingresa tu numero de celular </span>
+        <input type="number" nombre="correo" id="phone" autocomplete="phone" required="">
+    </label>
+    <section>
+        <span> De que ciudad eres? </span>
+        <input list="ciudades" required="">
+        <datalist id="ciudades">
+          <option value="Bogota , D.C BOGOTA "></option>
+          <option value="Medellin"></option>
+          <option value="Cali"></option>
+          <option value="Cúcuta"></option>
+          <option value="Barranquilla"></option>
+          <option value="Barranquilla"></option>
+        </datalist>
+     <section>
+      <div style="display: flex; justify-content: center; padding: 40px 40px; font-size: 100px;">
+        <input type="submit" name="Enviar" value="Enviar">
+      </div>
+      </section>
+</section>
+</form>
+</main>
+        <footer class="footer">
+            <figure>
+                <img src="./photos/vecteezy_social-media-icons-on-transparent-background-instagram_22488800.png" alt="Redes sociales" style="float: center; margin-right: 30px;width: 50vh;padding: 2%;">
+            </figure>
+            <h4>@Liz_Store</h4>
+        </footer>
+    </main>
+</body>
+</html>

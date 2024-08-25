@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Tienda Liz store </title>
+    <link rel="stylesheet" href="./grid.css">
+    <script src="grid.js"></script>
+    
+    <link rel="shortcut icon" href="./photos/klipartz.com (5).png" type="image/x-icon">
+    <script>
+        function ventana() {
+            alert("Formulario enviado correctamente.");
+        }
+        
+        function enviarFormulario() {
+            ventana();
+            return true;
+        }
+        </script>
+</head>
+<body class="grid-container">
+    <header class="header">
+        <nav>
+            <ul class="main-nav">
+                <div class="logo">
+                    <img src="./Photos/klipartz.com (5).png" alt="logo de la compañia"> 
+                </div>
+                <h1> Carrito de compras </h1>
+                <li class="main-nav__item"><a href="./grid.html">Home</a></li>
+                <li class="main-nav__item"><a href="">About us</a></li>
+            </ul>
+    </nav>
+
+    <div class="container-carrito">
+        <div class="products">
+            <div class="product">
+                <figure>
+                    <img src="./photos/pexels-pixabay-70746.jpg" alt="">
+                </figure>
+                <h2>Fresas del campo</h2>
+                <p>Precio: $50 mxn </p>
+                <button class="add-to-cart" data-name="Fresas del campo" data-price="50">Agregar al carrito</button>
+            </div>
+            <div class="product">
+                <figure>
+                    <img src="./photos/arandanos.jpg" alt="">
+                </figure>
+                <h2>Arandanos</h2>
+                <p>Precio: $100 mxn </p>
+                <button class="add-to-cart" data-name="Arandanos" data-price="100">Agregar al carrito</button>
+            </div>
+        </div>
+
+        <h2>Carrito</h2>
+        <ul id="cart-items">
+            <!-- Aquí aparecerán los productos agregados -->
+        </ul>
+        <p>Total: $<span id="total">0.00</span></p>
+    </div>
+
+</header>
+<!---
+   <div class="container-items">
+     <div class="item">
+        <figure>
+            <img src="./photos/pexels-pixabay-70746.jpg" alt="">
+        </figure>
+        <div class="info-producto">
+            <h2>Fresas del campo </h2>
+            <p class="price"> $120 mxn
+            </p>
+            <button type="button"> añadir al carrito </button>
+        </div>
+     </div>
+     <div class="item">
+        <figure>
+            <img src="./photos/manzanas.jpg" alt="">
+        </figure>
+        <div class="info-producto">
+            <h2>Manzanas verde </h2>
+            <p class="price"> $50 mxn
+            </p>
+            <button type="button"> añadir al carrito </button>
+        </div>
+     </div>
+     <div class="item">
+        <figure>
+            <img src="./photos/arandanos.jpg" alt="">
+        </figure>
+        <div class="info-producto">
+            <h2>Arandanos tierra azul</h2>
+            <p class="price"> $100 mxn
+            </p>
+            <button type="button"> añadir al carrito </button>
+        </div>
+     </div>
+     <div class="item">
+        <figure>
+            <img src="./photos/espinacas.jpg" alt="">
+        </figure>
+        <div class="info-producto">
+            <h2>espinacas</h2>
+            <p class="price"> $65 mxn
+            </p>
+            <button type="button"> añadir al carrito </button>
+        </div>
+     </div>
+     
+
+   </div>-->
+
+</body>
+</html>
